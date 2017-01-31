@@ -1,0 +1,7 @@
+.editorconfig
+.jscsrc
+
+/assets/sprite/img/
+/node_modules/
+/build/
+/psd/

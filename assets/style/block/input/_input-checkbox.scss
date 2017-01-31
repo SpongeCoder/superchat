@@ -1,0 +1,61 @@
+.input-checkbox {
+
+	&__input {
+		display: none;
+
+		&:checked {
+
+            & + label::before {
+                // background-color: $color-chekbox--checked;
+            }
+
+            & + label::after {
+    			opacity: 1;
+    		}
+        }
+	}
+
+	&__label {
+		position: relative;
+		padding-left: 1.8rem;
+		display: block;
+		min-height: 17px;
+
+		&::before {
+			content:'';
+			position: absolute;
+			top:0;
+			margin: auto 0;
+    		bottom: 0;
+			left:0;
+
+			width: 0.93rem;
+			height: 0.93rem;
+			border-radius: 3px;
+            // border: 2px solid $gray-blue--light;
+			background-color: $white;
+            transition: 0.3s background-color;
+		}
+
+		&::after {
+			content:'';
+			position: absolute;
+			top: 0;
+			bottom: 0;
+			margin: auto;
+			left: 0.19rem;
+			background-image: url('../img/icons/icons--cabinet.png');
+			width: 0.86rem;
+			height: 0.58rem;
+			opacity: 0;
+			transition:opacity 0.3s;
+
+			@include responsiveSprite(90, 129, 29, 20, 227, 182);
+		}
+
+        &--empty {
+            padding-left: 0;
+            width: 17px;
+        }
+	}
+}

@@ -1,0 +1,53 @@
+.icon {
+    position: relative;
+    font-style: italic;
+    display: inline-block;
+    font-style: normal;
+    text-decoration: none;
+
+    &::before,
+    &::after {
+        content:'';
+        position: absolute;
+        top: 0;
+        bottom:0;
+        margin:auto 0;
+        left:0;
+    }
+
+    &::before {
+        border-radius:50%;
+        width: 1.57rem;
+        height: 1.57rem;
+    }
+
+    &::after {
+        bottom:0;
+        top: 0;
+        margin:auto 0;
+        // background-image: url(../img/icons/icons--cabinet.png);
+    }
+
+    &--entry {
+        color: $color-text--dark;
+    }
+
+    // &--add {
+    //     color: $gray-blue--light;
+    //     padding-left: 2.3rem;
+
+    //     &::before {
+    //         border:2px solid $gray-blue--light;
+    //         left: -0.15rem;
+    //     }
+
+    //     &::after {
+    //         left: 0.49rem;
+    //         width: 0.58rem;
+    //         height: 0.58rem;
+
+    //         @include responsiveSprite(207, 31, 20, 20, 227, 182);
+    //     }
+    // }
+
+}

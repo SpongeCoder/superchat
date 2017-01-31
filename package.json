@@ -1,0 +1,25 @@
+{
+  "name": "scloud_mobile",
+  "version": "0.0.1",
+  "author": "",
+  "license": "BSD-2-Clause",
+  "devDependencies": {
+    "colors": "^1.1.2",
+    "gulp": "^3.9.1",
+    "gulp-autoprefixer": "^3.1.0",
+    "gulp-connect": "^5.0.0",
+    "gulp-cssmin": "^0.1.7",
+    "gulp-imagemin": "^3.0.2",
+    "gulp-jade": "^1.1.0",
+    "gulp-rigger": "^0.5.8",
+    "gulp-sass": "^2.3.2",
+    "gulp-watch": "^4.3.9",
+    "gulp.spritesmith": "^6.2.1",
+    "imagemin-pngquant": "^5.0.0"
+  },
+  "main": "gulpfile.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "description": ""
+}

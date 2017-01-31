@@ -1,0 +1,33 @@
+.btn {
+	text-decoration: none;
+	display: inline-block;
+	outline: none;
+	border:none;
+    font-size: 1em;
+
+    &--blue {
+        color: $blue;
+        background-color: transparent;
+        border-radius: 20px;
+        border: 2px solid $blue;
+        padding: 0.6rem 2.42rem;
+        text-transform: uppercase;
+        font-weight: bold;
+        // min-width: 185px;
+        text-align: center;
+        transition: color 0.3s, background-color 0.3s;
+
+        &:hover {
+            color: $white;
+            background-color: $blue;
+        }
+    }
+
+    &--gray {
+        color: $gray;
+        background-color: $white;
+        border: 2px solid #c9c9c9;
+        border-radius: 20px;
+    }
+
+}

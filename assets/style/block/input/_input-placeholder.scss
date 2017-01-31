@@ -1,0 +1,15 @@
+.input-placeholder {
+	position: absolute;
+    top: 1.1em;
+    left: 0.4rem;
+	transition: all 0.3s;
+
+    // color: $color-text-input;
+
+	&.is-focus {
+		transform: translateY(-115%);
+		// font-size: $font-size--xs;
+        font-style: italic;
+	}
+
+}

@@ -1,0 +1,35 @@
+// Colors
+$white: 	#ffffff;
+$gray:      #b0b0b0;
+
+$red:       #ea2929;
+$blue:      #2fb9d6;
+
+// Colors block
+$color-text: #737373;
+$color-text--dark: #333333;
+
+// Font family
+$font-family: 'UbuntuRegular', Myriad Pro, Arial, sans-serif;
+$font-family--input: $font-family;
+
+// Font size
+// $font-size--xxxs:   0.70em; // 10px [14px]
+// $font-size--xxs:    0.80em; // 11px [14px]
+// $font-size--xs: 	0.85em; // 12px [14px]
+$font-size--sm: 	0.95em; // 15px [16px]
+$font-size: 		16px;
+$font-size--md: 	1.13em; // 18px [16px]
+// $font-size--lg: 	1.3em; 	// 18px [14px]
+// $font-size--x-lg: 	1.36em; // 19px [14px]
+// $font-size--xl: 	1.5em; 	// 21px [14px]
+
+$font-size--h1: 1em;
+
+// Screen size
+$screen-sm: 320px;
+$screen-md: 480px;
+$screen-lg: 720px;
+$screen-xl: 1205px;
+
+$screen-wrapp: 1200px;

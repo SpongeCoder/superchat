@@ -1,0 +1,38 @@
+.input-text {
+	// border:2px solid $gray-blue--light;
+	box-sizing: border-box;
+	display: block;
+	transition: color 0.3s, background 0.3s;
+	width: 100%;
+	border-radius: 3px;
+	-webkit-appearance: none;
+	outline:none;
+	// background-color: $color-text-input--bg;
+	// color: $color-text-input;
+	font-size: 1em;
+	padding: 0.25rem 0.3rem;
+
+
+	&:focus {
+		// background-color: $color-text-input--bg-focus;
+
+		& + .input-placeholder {
+			transform: translateY(-115%);
+			// font-size: $font-size--xs;
+            font-style: italic;
+            // color: $color-text-input-placeholder--focus;
+		}
+	}
+
+    &:disabled {
+        // background-color: $color-text-input--bg-disable;
+    }
+
+	&.is-good {
+		// background-color: $color-text-input--bg-focus;
+	}
+
+	&.is-bad {
+		// background-color: $color-text-input--bg-bad;
+	}
+}

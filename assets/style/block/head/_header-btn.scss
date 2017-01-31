@@ -1,0 +1,17 @@
+.header-btn {
+    position: absolute;
+    right: 0;
+    top: 18px;
+
+    .btn {
+        position: absolute;
+        right: 130px;
+    }
+
+    .icon {
+        font-size: $font-size--md;
+        position: absolute;
+        right: 7px;
+        top: 9px;
+    }
+}

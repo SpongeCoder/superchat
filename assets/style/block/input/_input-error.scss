@@ -1,0 +1,9 @@
+.input-error {
+	height: 0;
+	color: $red;
+	// font-size: $font-size--xs;
+	font-style: italic;
+	padding: 0 0.6rem;
+
+	transition: height 0.3s;
+}

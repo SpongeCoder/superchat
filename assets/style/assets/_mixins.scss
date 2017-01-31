@@ -1,0 +1,44 @@
+@mixin rouble($fontSize, $lineHeight)
+{
+	font-family: 'rouble' !important;
+	speak: none;
+	font-style: normal;
+	font-variant: normal;
+	text-transform: none;
+
+	line-height: $lineHeight;
+	font-size: $fontSize;
+
+	// Better Font Rendering  //
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+
+	&:before { content: "\e900"; }
+}
+
+/**
+ * Подсчет позиции и размера для резинового спрайта
+ * @param  {integer} posX       - Абсолютное позиция изображения по х
+ * @param  {integer} posY       - Абсолютное позиция изображения по y
+ * @param  {integer} iconW      - Ширина иконки
+ * @param  {integer} iconH      - Высота иконки
+ * @param  {integer} spriteW    - Ширина спарйта
+ * @param  {integer} spriteH    - Высота спарйта
+ */
+@mixin responsiveSprite($posX, $posY, $iconW, $iconH, $spriteW, $spriteH)
+{
+	@if $posX == 0 {
+		background-position-x: 0;
+	} @else {
+		background-position-x: $posX / ($spriteW - $iconW) * 100%;
+	}
+
+	@if $posY == 0 {
+		background-position-y: 0;
+	} @else {
+		background-position-y: $posY / ($spriteH - $iconH) * 100%;
+	}
+
+	background-size: ($spriteW / $iconW * 100%), ($spriteH / $iconH * 100%);
+	background-repeat: no-repeat;
+}

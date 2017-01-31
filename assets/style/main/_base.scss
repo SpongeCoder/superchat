@@ -1,0 +1,17 @@
+.clear 	{ clear: both; }
+.left 	{ float: left; }
+.right 	{ float: right; }
+.rub 	{ @include rouble(0.8em, 1); } // Знак рубля
+
+.is-hide { display: none; }
+
+.wrapp {
+	width: $screen-wrapp;
+	margin: 0 auto;
+	position: relative;
+}
+
+.wrapp-main {
+    min-height: 100%;
+    overflow: hidden;
+}

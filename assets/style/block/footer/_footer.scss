@@ -1,0 +1,30 @@
+.footer {
+    margin-top: -180px;
+    height: 180px;
+    box-sizing: border-box;
+    color: $color-text--dark;
+
+    &__menu {
+        position: relative;
+        height: 125px;
+        background-color: #faf8ec;
+    }
+
+    &__bottom {
+        height: 55px;
+        background-color: #ededed;
+        text-align: center;
+    }
+
+	&__copyright {
+    	font-size: $font-size--sm;
+        padding-top: 1rem;
+	}
+
+    &__btn {
+        position: absolute;
+        top: 37px;
+        right: 0;
+    }
+
+}

@@ -1,0 +1,20 @@
+.header {
+	width: 100%;
+    min-width: $screen-sm;
+    height: 78px;
+
+    &__fixed {
+        width: 100%;
+        min-width: $screen-sm;
+        height: 78px;
+        z-index: 200;
+        position: fixed;
+        top:0;
+        left: 0;
+    }
+
+    .wrapp {
+        height: 100%;
+        border-bottom:1px solid #b3b3b3;
+    }
+}
