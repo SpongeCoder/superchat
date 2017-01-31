@@ -6,6 +6,7 @@
     &__fixed {
         width: 100%;
         min-width: $screen-sm;
+        background-color: $white;
         height: 78px;
         z-index: 200;
         position: fixed;
