@@ -1,0 +1,22 @@
+.calls-settings {
+	padding: 60px 0 25px 0;
+	
+	.left {width: 35%;}
+	.right {width: 65%;}
+
+	&__title {
+
+	}
+
+	&__text {
+		font-style: italic;
+		font-size: 18px;
+	}
+
+	&__img {
+		background-image: url('../img/settings-calls.jpg');
+		width: 761px;
+		height: 471px;
+	}
+
+}

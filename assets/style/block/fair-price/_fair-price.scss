@@ -1,0 +1,70 @@
+.fair-price {
+	position: absolute;
+	width: 562px;
+	height: 194px;
+	background-color: $blue;
+	color: $white;
+	font-weight: bold;
+	text-align: left;
+	border-radius: 20px;
+	box-sizing: border-box;
+	padding: 14px 70px;
+	overflow: hidden;
+	right: 4px;
+    top: 214px;
+    box-shadow: 0 17px 13px 0 rgba(0,0,0,0.13);
+
+	&::before,
+	&::after {
+		position: absolute;
+		top:0;
+		right: 0;
+	}
+
+	&::before {
+		content:'7';
+		font-size: 20em;
+	    line-height: 0.8em;
+	    right: 15px;
+	    line-height: 232px;
+	    color: rgba(255, 255, 255, 0.15);
+	    z-index: 1;
+	}
+
+	&::after {
+		content: '₽';
+		color: rgba(255, 255, 255, 0.20);
+		font-size: 5em;
+    	top: 122px;
+    	right: 20px;
+    	z-index: 1;
+	}
+
+
+	&__title {
+		font-size: 50px;
+		font-size: 3.15em;
+		font-weight: bold;
+		text-transform: uppercase;
+		letter-spacing: 2px;
+		line-height: 1.1em;
+		position: relative;
+		z-index: 2;
+	}
+
+	&__text {
+		font-size: 2em;
+		position: relative;
+		z-index: 2;
+
+		.rub {
+			font-size: 1.4em;
+		}
+
+	}
+
+	&__price {
+		font-size: 62px;
+		letter-spacing: 5px;
+	}
+}

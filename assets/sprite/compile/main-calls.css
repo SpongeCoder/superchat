@@ -1,0 +1,28 @@
+.arrow {
+    background-image: url(sprite.png);
+    background-position: -165px -256px;
+    width: 61px;
+    height: 41px;
+}
+
+.chat {
+    background-image: url(sprite.png);
+    background-position: 0px 0px;
+    width: 322px;
+    height: 251px;
+}
+
+.manager {
+    background-image: url(sprite.png);
+    background-position: -327px 0px;
+    width: 231px;
+    height: 251px;
+}
+
+.user {
+    background-image: url(sprite.png);
+    background-position: 0px -256px;
+    width: 160px;
+    height: 251px;
+}
+

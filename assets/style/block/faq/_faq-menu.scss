@@ -1,0 +1,82 @@
+.faq-menu {
+	background-color: #f9fcfe;
+	padding: 25px 10px;
+	border: 2px solid #eaf2f6;
+	
+	ul {
+		list-style-type: none;
+		padding: 0;
+		margin: 0;
+
+		ul li {
+			font-weight: normal;
+			margin-bottom: 10px;
+			margin-top: 9px;
+
+			a {
+				font-size: 14px;
+				border-color:transparent;
+				color: $color-text;
+
+				&:hover {
+					border-color:transparent;
+				}
+			}
+		}
+	}
+	
+	li {
+		font-weight: bold;
+		font-size: 15px;
+		position: relative;
+		margin-bottom: 12px;
+
+		&::before {
+			content: '';
+			position: absolute;
+			top:6px;
+			left: 2px;
+			width: 13px;
+			height: 13px;
+			border-radius: 50%;
+			background-color: transparent;
+			transition: background 0.3s;
+		}
+
+		a {
+			text-decoration: none;	
+			color: $color-text--dark;
+			margin-left: 20px;
+			padding-top: 5px;
+			display: inline-block;
+			border-bottom:1px dotted $color-text--dark;
+			transition: color 0.3s, border-color 0.3s;
+
+			&:hover {
+				color: $blue;
+				border-bottom:1px dotted $blue;
+			}
+
+			&.is-active {
+				border-color:transparent;
+			}
+		}
+
+		&.is-active {
+			color: $blue;
+			
+			&::before {
+				background-color: $blue;
+			}
+
+			a {
+				color: $blue;
+				border-color:transparent;
+			}
+		}
+	}
+
+	&__spoiler {
+		display: none;		
+	}
+}

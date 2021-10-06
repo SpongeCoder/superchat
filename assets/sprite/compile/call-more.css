@@ -1,0 +1,35 @@
+.analytics {
+    background-image: url(sprite.png);
+    background-position: 0px 0px;
+    width: 75px;
+    height: 67px;
+}
+
+.calendar {
+    background-image: url(sprite.png);
+    background-position: 0px -72px;
+    width: 68px;
+    height: 68px;
+}
+
+.design {
+    background-image: url(sprite.png);
+    background-position: -80px 0px;
+    width: 68px;
+    height: 68px;
+}
+
+.email {
+    background-image: url(sprite.png);
+    background-position: -153px 0px;
+    width: 68px;
+    height: 68px;
+}
+
+.target {
+    background-image: url(sprite.png);
+    background-position: 0px -145px;
+    width: 68px;
+    height: 68px;
+}
+

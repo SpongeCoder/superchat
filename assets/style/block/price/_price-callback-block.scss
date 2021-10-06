@@ -1,0 +1,31 @@
+.price-callback-block {
+	@extend .price-chat-block;
+	
+	width: 585px;
+	height: 365px;
+	display: inline-block;
+	position: relative;
+	margin-right: 25px;
+	
+
+	&__head {
+		@extend .price-chat-block__head;
+
+		&::after {width: 32%;}
+		&::before {width: 95%;}
+
+		h2 {
+			font-size: 26px;
+			margin: 35px 0 0 0;
+			letter-spacing: normal;
+		}
+	}
+
+	&__footer {
+		@extend .price-chat-block__footer;
+
+		font-size: 20px;
+		font-style: italic;
+		padding-bottom: 30px;
+	}
+}

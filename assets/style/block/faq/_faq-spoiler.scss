@@ -1,0 +1,51 @@
+.faq-spoiler {
+	position: relative;
+	margin-bottom: 40px;
+
+	&__title {
+		font-size: 24px;
+		font-weight: bold;
+		color: $color-text--dark;
+		margin-bottom: 20px;
+		margin-top: 0;
+		cursor: pointer;
+		transition:color 0.3s;
+
+		&:hover {
+			color: $blue;
+		}
+
+		&::before {
+			content:'';
+			position: absolute;
+			bottom: 20px;
+			right: 10px;
+
+			background-image: url('../img/icons/icon-arrows.png');
+			background-position: 0px -72px;
+			width: 20px;
+			height: 12px;
+		}
+
+		&.is-active::before {
+			background-position: -85px -53px;
+		}
+	}
+	
+	
+
+	&__text {
+		padding: 0 0 20px 0;
+	}
+
+	&__content {
+		display: none;
+		padding: 0 0 20px 0;
+
+		p:first-child {
+			margin-top: 0;
+		}
+	}
+
+
+}

@@ -1,0 +1,77 @@
+.calls-img {
+	display: inline-block;
+	width: 380px;
+	padding-top: 259px;
+	position: absolute;
+	
+	&__text {
+		font-size: 22px;
+	}
+	
+	&::after,
+	&::before {
+		content:'';
+		position: absolute;
+		top: 0;
+		left: 0;
+		right: 0;
+		margin: 0 auto;
+		background-image: url('../img/icons/main-calls.png');
+	}
+
+	&__title {
+		margin-top: 31px;
+    	margin-bottom: 8px;	
+	}
+
+	&--user {
+		left: 17px;
+		width: 310px;
+		
+		&::before {
+			background-position: 0px -256px;
+    		width: 160px;
+    		height: 251px;
+		}
+		
+		&::after {
+			background-position: -165px -256px;
+		    width: 61px;
+		    height: 41px;
+		    left: 252px;
+    		top: 90px;
+		}
+	}
+	&--chat {
+		left: 330px;
+
+
+		&::before {
+			background-position: 0px 0px;
+			width: 322px;
+			height: 251px;
+			left: 47px;
+		}
+
+		&::after {
+			background-position: -165px -256px;
+		    width: 61px;
+		    height: 41px;
+		    left: 453px;
+    		top: 90px;
+		}
+
+		.calls-img__title {margin-left: 160px; }
+		.calls-img__text {margin-left: 160px; }
+	}
+	&--manager {
+		left: 820px;
+
+		&::before {
+			background-position: -327px 0px;
+    		width: 231px;
+    		height: 251px;
+		}
+	}
+
+}

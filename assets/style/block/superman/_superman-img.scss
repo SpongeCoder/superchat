@@ -1,0 +1,14 @@
+.superman-img {
+
+	&--middle {
+		background-image: url('../img/superman--middle.png');
+		width: 278px;
+		height: 419px;
+	}
+	
+	&--small {
+		background-image: url('../img/superman--small.png');
+		width: 195px;
+		height: 153px;
+	}
+}

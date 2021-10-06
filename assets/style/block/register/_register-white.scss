@@ -1,0 +1,28 @@
+.register-white {
+	text-align: center;
+    padding: 62px 0;
+    position: relative;
+
+	&__block {
+		display: inline-block;
+		margin-right: 10px;
+		position: relative;
+		font-size: 19px;
+
+		&:last-child {margin-right: 0;}
+
+		.input-text {width: 408px;}
+		.btn {width: 250px;}
+	}
+
+	&__img {
+		width: 89px;
+		height: 89px;
+		background-image: url('../img/register/write-doc.png');
+		display: inline-block;
+		position: absolute;
+		right: 10px;
+		top: -35px;
+	}
+
+}

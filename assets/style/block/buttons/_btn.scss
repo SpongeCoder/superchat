@@ -5,10 +5,14 @@
 	border:none;
     font-size: 1em;
 
+    &:hover {
+        cursor: pointer;
+    }
+
     &--blue {
         color: $blue;
         background-color: transparent;
-        border-radius: 20px;
+        border-radius: 1.25em;
         border: 2px solid $blue;
         padding: 0.6rem 2.42rem;
         text-transform: uppercase;
@@ -23,10 +27,24 @@
     }
 
     &--gray {
+        @extend .btn--blue;
+
         color: $gray;
         background-color: $white;
         border: 2px solid #c9c9c9;
-        border-radius: 20px;
+        border-radius: 1.25em;
+    }
+
+    &--orange {
+        @extend .btn--blue;
+
+        border-color: $orange;
+        background-color: $orange;
+        color: $white;
+
+        &:hover {
+            background-color: lighten($orange, 10%);
+        }
     }
 
 }

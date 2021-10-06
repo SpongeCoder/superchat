@@ -4,13 +4,14 @@ $gray:      #b0b0b0;
 
 $red:       #ea2929;
 $blue:      #2fb9d6;
+$orange:    #ff8c08;
 
 // Colors block
 $color-text: #737373;
 $color-text--dark: #333333;
 
 // Font family
-$font-family: 'UbuntuRegular', Myriad Pro, Arial, sans-serif;
+$font-family: 'Ubuntu', Myriad Pro, Arial, sans-serif;
 $font-family--input: $font-family;
 
 // Font size
@@ -24,6 +25,8 @@ $font-size--md: 	1.13em; // 18px [16px]
 // $font-size--x-lg: 	1.36em; // 19px [14px]
 // $font-size--xl: 	1.5em; 	// 21px [14px]
 
+// 1.17em // 21px [16px]
+
 $font-size--h1: 1em;
 
 // Screen size
@@ -33,3 +36,4 @@ $screen-lg: 720px;
 $screen-xl: 1205px;
 
 $screen-wrapp: 1200px;
+$gradient: linear-gradient(to bottom,  rgba(230,246,247,1) 0%,rgba(249,250,252,1) 50%,rgba(246,245,231,1) 100%);

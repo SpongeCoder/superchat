@@ -1,19 +1,19 @@
 @mixin rouble($fontSize, $lineHeight)
 {
-	font-family: 'rouble' !important;
-	speak: none;
-	font-style: normal;
-	font-variant: normal;
-	text-transform: none;
+	// font-family: 'rouble' !important;
+	// speak: none;
+	// font-style: normal;
+	// font-variant: normal;
+	// text-transform: none;
 
-	line-height: $lineHeight;
-	font-size: $fontSize;
+	// line-height: $lineHeight;
+	// font-size: $fontSize;
 
-	// Better Font Rendering  //
-	-webkit-font-smoothing: antialiased;
-	-moz-osx-font-smoothing: grayscale;
+	// // Better Font Rendering  //
+	// -webkit-font-smoothing: antialiased;
+	// -moz-osx-font-smoothing: grayscale;
 
-	&:before { content: "\e900"; }
+	// &:before { content: "\e900"; }
 }
 
 /**

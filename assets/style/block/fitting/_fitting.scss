@@ -1,0 +1,34 @@
+.fitting {
+	position: relative;
+	
+	&__form {
+		width: 55%;
+		position: absolute;
+		right: 120px;
+		top: 60px;
+	}
+
+	&__title {
+		margin-bottom: 15px;
+	}
+
+	&__input {
+		margin-top: 23px;
+	}
+
+	&__btn {
+		display: inline-block;
+		margin-left: 9px;
+
+		.btn {
+			padding: 0.6rem 2.82rem;
+		}
+	}
+
+	.superman-img {
+		position: absolute;
+    	left: 52px;
+    	top: -69px;
+    	z-index: 1;
+	}
+}

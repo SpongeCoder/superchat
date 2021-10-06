@@ -1,26 +1,29 @@
 .input-text {
-	// border:2px solid $gray-blue--light;
+	border:2px solid #8f8f8f;
 	box-sizing: border-box;
-	display: block;
+	display: inline-block;
 	transition: color 0.3s, background 0.3s;
-	width: 100%;
-	border-radius: 3px;
+	width: auto;
+	min-width: 370px;
+	border-radius: 1.55em;
 	-webkit-appearance: none;
 	outline:none;
-	// background-color: $color-text-input--bg;
-	// color: $color-text-input;
+	background-color: transparent;
+	color: $color-text--dark;
 	font-size: 1em;
-	padding: 0.25rem 0.3rem;
+	padding: 0.7em 1.4em;
+	position: relative;
+	z-index: 1;
 
 
 	&:focus {
 		// background-color: $color-text-input--bg-focus;
 
 		& + .input-placeholder {
-			transform: translateY(-115%);
-			// font-size: $font-size--xs;
-            font-style: italic;
-            // color: $color-text-input-placeholder--focus;
+			transform: translateY(-220%);
+			font-size: 0.8rem;
+            // font-style: italic;
+            color: lighten($color-text, 15%);
 		}
 	}
 

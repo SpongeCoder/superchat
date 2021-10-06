@@ -1,0 +1,37 @@
+.chat-main {
+
+	&__block {
+		position: relative;
+
+		.left {
+			width: 43%;
+			
+			img {
+				position: relative;
+				left: 39px;
+				top: 24px;
+			}			
+		}
+
+		.right {
+			width: 47%;
+			font-size: 18px;
+
+			h2 {margin: 68px 0 25px 0;}
+		}
+	}
+
+	&__text {
+		width: 90%;
+		line-height: 1.5em;
+	}
+
+	&__btn {
+		.btn {
+		    font-size: 24px;
+			padding: 1.2rem 4.72rem;
+			border-radius: 32px;
+			margin-top: 20px;
+		}
+	}
+}

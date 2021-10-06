@@ -1,0 +1,98 @@
+.superman-big {
+	width: 100%;
+	height: 871px;
+	box-sizing:border-box;
+	position: relative;
+	text-align: center;
+	padding-top: 47px;
+	overflow: hidden;
+	background: rgb(230,246,247);
+	background: $gradient;
+	
+	&__title {
+		text-transform: uppercase;
+
+		letter-spacing: 6px;
+		font-size: 48px;
+		margin: 0;
+
+		&--second {
+			font-size: 36px;
+			text-transform: none;
+			letter-spacing: normal;
+			margin: 8px 0 0 0;
+		}
+	}
+	
+	&__list {
+		position: absolute;
+		text-align: left;
+		list-style-type: none;
+		padding: 0;
+		margin: 0;
+		color: $color-text--dark;
+		font-size: 1.9em;
+		top: 458px;
+		right: 38px;
+
+		li {
+			position: relative;
+			padding-left: 70px;
+			margin: 0 0 25px 0;
+
+			&::before {
+				content: '';
+				position: absolute;
+				background-image: url('../img/list-logo.png');
+				width: 46px;
+				height: 32px;
+				top: 7px;
+				left: 18px;
+			}
+		}
+	}
+	
+	&__img {
+		position: absolute;
+		left: -16px;
+		top: 130px;
+		background-image: url('../img/superman.png');
+		width: 765px;
+		height: 756px;
+	}
+	
+	&-footer {
+		position: absolute;
+	    height: 56px;
+	    width: 100%;
+	    min-width: 1916px;
+	    bottom: 0;
+	    background-image: url('../img/superman-big-footer.png');
+	    background-repeat: no-repeat;
+	    background-position: 50% 0;
+
+		
+
+		&__wrapp {
+			width: $screen-wrapp;
+			margin: 0 auto;
+			position: relative;
+			height: 56px;
+			
+			&::before,
+			&::after {
+				content:'';
+				position: absolute;			
+				width: 200%;
+				height: 56px;
+				
+				bottom:-2px;
+				background-color: $white;
+			}
+
+			&::after  {right: 129%;}
+			&::before {left: 129%;}
+		}
+	}
+
+}

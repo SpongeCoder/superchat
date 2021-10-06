@@ -1,0 +1,106 @@
+.price-chat-block {
+	display: block;
+	width: 379px;
+	height: 365px;
+	margin-right: 28px;	
+	float: left;
+	position: relative;
+	box-shadow: 0px 16px 32px 0px rgba(0,0,0, 0.12);
+	border:1px solid #e5e5e5;
+	border-radius: 5px;
+
+	&:nth-child(3) {margin-right: 0;}
+
+
+	&__head {
+		position: absolute;
+		top: 0;
+		left: 0;
+		right: 0;
+		margin: 0 auto;
+
+		&::before,
+		&::after {
+			content:'';
+			position: absolute;
+			left: 0;
+			right: 0;
+			margin: 0 auto;
+		}
+
+		&::before {
+			width: 90%;
+			height: 4px;
+			background-color: #a2e4f1;
+
+		}
+
+		&::after {
+			width: 54%;
+			background-color: #a1e2ef;
+			height: 14px;
+			border-top-left-radius: 20px;
+			border-top-right-radius: 20px;
+			top: -14px;
+		}
+		
+	}
+
+	&__footer {
+		position: absolute;
+		bottom: 0;
+		left: 0;
+		right: 0;
+		margin: 0 auto;
+
+		&::before {
+			content:'';
+			position: absolute;
+			left: 0;
+			right: 0;
+			margin: 0 auto;
+			width: 120px;
+			height: 7px;
+			bottom: 0;
+			background-color: #a2e4f1;
+		}
+		
+	}
+
+	&--gray {
+		color: #7fdcef;
+
+		.price-chat-block__head::before,
+		.price-chat-block__footer::before {			
+			background-color: #e6e6e6;
+		}
+
+		.price-chat-block__head::after {
+			background-color: #e3e3e3;
+		}
+	}
+	&--blue-dark {
+		color: #27a8c3;
+
+		.price-chat-block__head::before,
+		.price-chat-block__footer::before {			
+			background-color: #2fb9d6;
+		}
+
+		.price-chat-block__head::after {
+			background-color: #32b8d4;
+		}
+	}
+	&--blue {
+		color: #56d1ea;
+
+		.price-chat-block__head::before,
+		.price-chat-block__footer::before {			
+			background-color: #a2e4f1;
+		}
+
+		.price-chat-block__head::after {
+			background-color: #a1e2ef;
+		}
+	}
+}

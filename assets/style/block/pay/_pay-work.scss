@@ -1,0 +1,19 @@
+.pay-work {
+	padding: 42px 0;
+
+	&__text {
+		display: inline-block;
+		color: $color-text--dark;
+		font-size: 18px;
+	}
+
+	&__img {
+		display: inline-block;
+		background-image: url('../img/pay-work.jpg');
+		width: 791px;
+		height: 45px;
+		position: absolute;
+		top: -9px;
+		right: 53px;
+	}
+}

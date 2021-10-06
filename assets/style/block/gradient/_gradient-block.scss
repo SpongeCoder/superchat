@@ -1,0 +1,47 @@
+.gradient-block {
+	height: 315px;
+	width: 100%;
+	background: $gradient;
+	position: relative;
+	
+	&::after {
+		content: '';
+		background-image: url('../img/gradient-footer--middle.png');
+		background-repeat: no-repeat;
+		height: 56px;
+		width: 1901px;
+		position: absolute;
+		top: 0;
+		left: 0;
+		right: 0;
+		margin: 0 auto;
+
+	}
+	
+	&__pattern-street {
+		background-image: url('../img/patterns/street.png');
+		background-repeat: repeat-x;
+		width: 100%;
+		height: 109px;
+		position: absolute;
+		left: 0;
+		bottom: 0;
+    	
+
+		&--small {
+			bottom: 4%;
+			background-size: 19%;
+		}
+	}
+
+
+	&--small-superman {
+		height: 170px;
+    	position: relative;
+    	margin-top: -45px;
+
+		.gradient-block__pattern-street {
+
+		}
+	}
+}

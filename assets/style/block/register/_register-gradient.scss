@@ -1,0 +1,17 @@
+.register-gradient {
+	position: relative;
+	top: 93px;
+
+	&__title {
+		letter-spacing: normal;
+		margin-bottom: 37px;
+	}
+
+	&__btn {
+		.btn {
+			font-size: 24px;
+			padding: 1.2rem 4.72rem;
+			border-radius: 32px;
+		}
+	}
+}

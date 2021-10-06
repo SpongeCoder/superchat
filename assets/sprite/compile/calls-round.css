@@ -1,0 +1,14 @@
+.burn {
+    background-image: url(sprite.png);
+    background-position: 0px 0px;
+    width: 125px;
+    height: 126px;
+}
+
+.contacts {
+    background-image: url(sprite.png);
+    background-position: -130px 0px;
+    width: 125px;
+    height: 126px;
+}
+

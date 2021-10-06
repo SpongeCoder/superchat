@@ -1,0 +1,38 @@
+.plump {
+	position: relative;
+	height: 100%;
+	text-align: center;
+
+	&__wrapp {
+		height: 100%;
+	}
+
+	&__title {
+		display: inline-block;
+		position: relative;
+		top:95px;
+		font-size: 26px;
+		text-decoration: none;
+		color: $color-text--dark;
+		border-bottom: 2px dotted $color-text--dark;
+		
+		
+		&::before {
+			content:'';
+			position: absolute;
+			background-image: url('../img/icons/icon-arrows.png');
+			background-position: 0px -53px;
+			width: 25px;
+			height: 14px;
+			top: 10px;
+			right: -53px;
+		}
+	}
+
+	.superman-img {
+		position: absolute;
+		bottom:0;
+		right: 106px;
+		z-index: 1;
+	}
+}

@@ -6,7 +6,7 @@
 		display: inline-block;
 		text-decoration: none;
 		position: relative;
-
+    
         &.is-active,
 		&:hover { color: $blue; }
 	}
@@ -18,30 +18,28 @@
         left: 235px;
 
         .menu__item {
-            padding: 1.87rem 0;
+            padding: 1.8rem 0;
             margin: 0 1.2rem;
+            display: inline-block;
             font-size: $font-size--md;
 
-            &::before,
             &::after {
                 content:'';
                 position: absolute;
                 bottom:0;
                 height: 7px;
-                transition:width 0.3s;
+                transition:opacity 0.3s;
                 background-color: $blue;
-                width: 0%;
+                width: 100%;
+                opacity: 0;
+                left: 0;
             }
-
-            &::before {right: 50%;}
-            &::after  {left: 50%;}
 
             &:hover,
             &.is-active {
 
-                &::before,
                 &::after {
-                    width: 50%;
+                    opacity: 1;
                 }
             }
         }

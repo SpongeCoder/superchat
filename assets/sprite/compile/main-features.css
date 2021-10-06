@@ -1,0 +1,21 @@
+.add-operator {
+    background-image: url(sprite.png);
+    background-position: -774px 0px;
+    width: 398px;
+    height: 453px;
+}
+
+.history {
+    background-image: url(sprite.png);
+    background-position: 0px 0px;
+    width: 769px;
+    height: 471px;
+}
+
+.hot-words {
+    background-image: url(sprite.png);
+    background-position: 0px -476px;
+    width: 734px;
+    height: 492px;
+}
+
